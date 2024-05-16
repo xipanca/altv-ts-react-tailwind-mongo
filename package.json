@@ -1,0 +1,52 @@
+{
+    "name": "altv-reactvite",
+    "version": "5.0.1",
+    "description": "TypeScript with alt:V Made Easy",
+    "scripts": {
+        "build": "node ./scripts/compiler.js && npx vite build ./src-webviews && node ./scripts/copy.js && node ./scripts/transform.js",
+        "windows": "npm run build && altv-voice-server.exe && altv-server.exe",
+        "linux": "npm run build && ./altv-voice-server.exe ./altv-server",
+        "dev": "node ./scripts/watch.js",
+        "react": "npx vite ./src-webviews --clearScreen=false --host=localhost --port=3000",
+        "update": "altv-pkg d release"
+    },
+    "author": "Xipanca",
+    "license": "ISC",
+    "devDependencies": {
+        "@altv/types-client": "^16.2.1",
+        "@altv/types-natives": "^16.2.0",
+        "@altv/types-server": "^16.2.0",
+        "@altv/types-shared": "^16.2.0",
+        "@altv/types-webview": "^16.2.1",
+        "@swc/cli": "^0.1.62",
+        "@swc/core": "^1.3.95",
+        "@types/node": "^18.15.11",
+        "@types/react": "^18.2.55",
+        "@types/react-dom": "^18.2.19",
+        "@vitejs/plugin-react-swc": "^3.5.0",
+        "altv-pkg": "^2.6.0",
+        "autoprefixer": "^10.4.19",
+        "fs-extra": "^11.1.1",
+        "glob": "^10.3.10",
+        "postcss": "^8.4.38",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "tailwindcss": "^3.4.3",
+        "toml": "^3.0.0",
+        "typescript": "latest",
+        "watcher": "^2.3.0"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "semi": true,
+        "printWidth": 120,
+        "arrowParens": "always",
+        "singleQuote": true
+    },
+    "type": "module",
+    "dependencies": {
+        "react-router": "^6.23.1",
+        "react-router-dom": "^6.23.1",
+        "vite": "^5.1.0"
+    }
+}

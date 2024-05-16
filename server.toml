@@ -1,0 +1,26 @@
+announce = false
+
+description = 'test'
+website = 'test.com'
+gamemode = 'Freeroam'
+
+language = 'en'
+modules = [ 'js-module' ]
+name = 'TestServer'
+players = 1024
+port = 7788
+tags = [ 'customTag1', 'customTag2', 'customTag3', 'customTag4' ]
+
+resources = [
+    # Add mods here
+    'webviews',
+    'core' 
+]
+debug = true
+host = '0.0.0.0'
+
+[js-module]
+global-webcrypto = true
+global-fetch = true
+
+

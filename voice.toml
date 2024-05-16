@@ -1,0 +1,14 @@
+mapBoundsMinX = -10000
+mapBoundsMinY = -10000
+mapBoundsMaxX = 65536
+mapBoundsMaxY = 65536
+mapCellAreaSize = 100
+
+[voice]
+streamingTickRate = 10
+bitrate = 64000
+externalSecret = 1234567890
+externalHost = "127.0.0.1"
+externalPort = 7798
+externalPublicHost = "127.0.0.1"
+externalPublicPort = 7799

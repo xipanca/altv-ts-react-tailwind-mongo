@@ -1,5 +1,5 @@
 <p align="center" style="font-size: 26px">
-	<b>Typescript Boilerplate for alt:V with React - v5.0.1</b>
+	<b>Typescript Boilerplate for alt:V with React</b>
 </p>
 
 <p align="center">
